@@ -29,12 +29,13 @@ class TaskPool:
         task4 = Task("Build Docker container")
         task5 = Task("Run CI workflow")
         task6 = Task("Update index.html report")
+        task7 = Task("Test pull request workflow")
 
         task1.mark_completed()
         task2.mark_completed()
         task3.mark_completed()
 
-        self.tasks = [task1, task2, task3, task4, task5, task6]
+        self.tasks = [task1, task2, task3, task4, task5, task6, task7]
 
     def add_task(self, task):
         self.tasks.append(task)
